@@ -1,0 +1,26 @@
+# Junk
+.DS_Store
+*.suo
+*.swp
+
+# Git Merge files
+*.orig
+
+# Don't ignore .gitkeep files
+!.gitkeep
+
+# IDE metadata
+/.vs/
+/.vscode/
+*.sln
+*.njsproj
+*.njsproj.user
+/bin/
+/obj/
+
+# Node libraries
+/node_modules
+/package-lock.json
+
+# Environment variables
+.env

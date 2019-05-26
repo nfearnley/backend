@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 const express = require("express");
+const cors = require("cors");
 
 const sarlaccRouter = require("./routers/sarlacc");
 const scribRouter = require("./routers/scrib");
@@ -10,6 +11,9 @@ const httpErrorHandler = require("./middleware/httpErrorHandler");
 const errorHandler = require("./middleware/errorHandler");
 
 var app = express();
+
+// Enable CORS
+app.use(cors());
 
 // Parse incoming JSON
 app.use(express.json());
